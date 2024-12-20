@@ -1,0 +1,165 @@
+/* Perustyyli - Futuristinen fontti */
+body {
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace;
+    background-color: #0D0D0D;  /* Tumma tausta */
+    color: #00FF9C;  /* Neon vihreä teksti */
+    margin: 0;
+    padding: 0;
+    background-image: url("cyber.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Header */
+header {
+    background-color: #FF00FF;  /* Neon pinkki header */
+    color: white;
+    text-align: center;
+    padding: 0.0%;
+    font-size: 2em;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.8);  /* Lisää hohtava varjoefekti */
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace; /* Futuristinen fontti */
+}
+
+/* Navigaatio */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #202020;  /* Tummempi navigaatio */
+    margin: 0;
+    box-shadow: 0px 0px 10px rgba(0, 255, 156, 0.8);  /* Lisää hohtava varjoefekti */
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace; /* Futuristinen fontti */
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px 30px;
+}
+
+nav ul li a {
+    color: #00FF9C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF00FF;
+}
+
+/* Osioiden tyyli */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1A1A1A;  /* Tummempi osioiden tausta */
+    box-shadow: 0px 0px 20px rgba(0, 255, 156, 0.8);  /* Lisää hohtava varjoefekti */
+    border-radius: 15px;
+    max-width: 1200px; /* Lisää maksimileveys */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Lisää animaatio */
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace; /* Futuristinen fontti */
+}
+
+section:hover {
+    box-shadow: 0px 0px 25px rgba(255, 0, 255, 0.9); /* Hohtaa enemmän hover-tilassa */
+    transform: translateY(-5px); /* Nousee ylös hover-tilassa */
+}
+
+h2 {
+    color: #FF00FF;  /* Neon pinkki otsikko */
+    text-shadow: 0px 0px 10px #FF00FF;
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace; /* Futuristinen fontti */
+}
+
+/* Taulukko */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #282828;
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace; /* Futuristinen fontti */
+}
+
+table, th, td {
+    border: 1px solid #FF00FF;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #FF00FF;
+    color: white;
+}
+
+td {
+    color: #00FF9C;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #00FF9C;
+    text-align: center;
+    padding: 0em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 255, 156, 0.8);  /* Lisää hohtava varjoefekti */
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace; /* Futuristinen fontti */
+}
+
+/* Lomake */
+form {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.8);  /* Lisää hohtava varjoefekti */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Lisää animaatio */
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace; /* Futuristinen fontti */
+}
+
+form:hover {
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.9); /* Hohtaa enemmän hover-tilassa */
+    transform: translateY(-5px); /* Nousee ylös hover-tilassa */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00FF9C;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00FF9C;
+    background-color: #1A1A1A;
+    color: #00FF9C;
+    font-size: 1em;
+    box-sizing: border-box; /* Varmistaa, että padding ei ylitä elementin leveyttä */
+}
+
+form button {
+    background-color: #FF00FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px; /* Pyöristää napin kulmat */
+}
+
+form button:hover {
+    background-color: #00FF9C;
+    color: #0D0D0D;
+}
+
+/* Kuva */
+img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.8);  /* Lisää hohtava varjoefekti */
+    max-width: 100%; /* Varmistaa, että kuva ei ylitä vanhempaa elementtiä */
+    height: auto; /* Säilyttää kuvan kuvasuhteen */
+}
