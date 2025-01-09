@@ -6,93 +6,98 @@
     <title>Daniil Jukaraisen Portfolio</title>
     <link id="theme-stylesheet" rel="stylesheet" href="style.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@400;700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
+    <header class="bg-primary text-white text-center py-3">
         <h1>Tervetuloa Portfoliooni</h1>
     </header>
 
-    <!-- Navigaatio -->
-    <nav>
-        <ul>
-            <li><a href="#esittely">Esittely</a></li>
-            <li><a href="#koulutus">Koulutus</a></li>
-            <li><a href="#tyokokemus">Työkokemus</a></li>
-            <li><a href="#taidot">Taidot</a></li>
-            <li><a href="#yhteys">Yhteydenotto</a></li>
-            <li><a href="#tyoni">Työni</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#esittely">Esittely</a></li>
+                <li class="nav-item"><a class="nav-link" href="#koulutus">Koulutus</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tyokokemus">Työkokemus</a></li>
+                <li class="nav-item"><a class="nav-link" href="#taidot">Taidot</a></li>
+                <li class="nav-item"><a class="nav-link" href="#yhteys">Yhteydenotto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Esittelyosio -->
-    <section id="esittely">
+    <section id="esittely" class="container py-4">
         <h2>Esittely</h2>
-        <img src="daniil_kuva.png" alt="Kuva minusta" width="200">
-        
+        <img src="daniil_kuva.png" alt="Kuva minusta" class="img-fluid rounded mb-3" width="200">
+        <p>Olen Daniil Jukarainen, 18-vuotias ohjelmistokehittäjäopiskelija. Olen motivoitunut oppimaan ja kehittämään taitojani niin teknisellä kuin luovallakin alalla. 
+           Olen erityisen kiinnostunut ohjelmistokehityksestä ja olen hankkinut käytännön kokemusta kouluprojekteista ja harrastuksista.</p>
     </section>
 
-    <!-- Koulutusosio -->
-    <section id="koulutus">
+    <section id="koulutus" class="container py-4">
         <h2>Koulutus</h2>
         <ul>
             <li>Ammattikoulu - IT, Ohjelmistokehittäjä (2023-2026)</li>
         </ul>
     </section>
 
-    <!-- Työkokemusosio -->
-    <section id="tyokokemus">
+    <section id="tyokokemus" class="container py-4">
         <h2>Työkokemus</h2>
-        <p>Olen 18-vuotias nuori, jolla on monipuolisia taitoja ja halu kehittää itseäni. Vaikka minulla ei ole vielä virallista työkokemusta, olen saanut käytännön kokemusta auttamalla isääni puutöissä, mikä on opettanut minulle arvokkaita taitoja kuten tarkkuutta, vastuullisuutta ja tiimityöskentelyä.</p>
-        <p>Vapaa-ajallani olen kiinnostunut luovista aloista, ja osaan käyttää Blenderiä 3D-mallinnukseen ja animaatioiden tekemiseen. Lisäksi teen pelimusiikkia, mikä on kehittänyt kykyäni työskennellä luovasti ja teknisesti vaativissa projekteissa.</p>
+        <p>Vaikka minulla ei ole vielä virallista työkokemusta, olen hankkinut käytännön taitoja työskentelemällä erilaisissa projekteissa, jotka ovat kehittäneet ongelmanratkaisukykyäni ja tiimityötaitojani.</p>
     </section>
 
-    <!-- Taidot-taulukko -->
-    <section id="taidot">
+    <section id="taidot" class="container py-4">
         <h2>Osaaminen</h2>
-        <table>
-            <tr>
-                <th>Kieli/Ohjelma</th>
-                <th>Osaaminen</th>
-            </tr>
-            <tr>
-                <td>PHP</td>
-                <td>Keskitaso</td>
-            </tr>
-            <tr>
-                <td>HTML/CSS</td>
-                <td>Hyvä</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Keskitaso</td>
-            </tr>
-            <tr>
-                <td>Musiikin tekeminen</td>
-                <td>Yli keskitason</td>
-            </tr>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Kieli/Ohjelma</th>
+                    <th>Osaaminen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PHP</td>
+                    <td>Keskitaso</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Hyvä</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Keskitaso</td>
+                </tr>
+                <tr>
+                    <td>Tiimityö</td>
+                    <td>Erinomainen</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
-    <!-- Musiikin esittelyosio -->
-    <section id="tyoni">
-        <h2>Työni</h2>
-        <p>Tässä on yksi musiikkikappaleistani, jonka olen tehnyt. Voit kuunnella sen painamalla "Play".</p>
-        <audio controls>
-            <source src="final_crash.mp3" type="audio/mpeg">
-            Selaimesi ei tue äänentoistoa.
-        </audio>
+    <section id="yhteys" class="container py-4">
+        <h2>Yhteydenotto</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nimi</label>
+                <input type="text" id="name" class="form-control" placeholder="Nimesi">
+            </div>
+            <div class="form-group">
+                <label for="email">Sähköposti</label>
+                <input type="email" id="email" class="form-control" placeholder="Sähköpostiosoitteesi">
+            </div>
+            <div class="form-group">
+                <label for="message">Viesti</label>
+                <textarea id="message" class="form-control" rows="4" placeholder="Viesti"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Lähetä</button>
+        </form>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Daniil Jukarainen.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Daniil Jukarainen</p>
     </footer>
 
-    <script src="theme-switcher.js"></script>
 </body>
 </html>
 
