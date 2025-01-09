@@ -1,176 +1,189 @@
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Orbitron', 'Exo 2', Courier, monospace;
+    background-color: #0D0D0D;  /* Tumma tausta */
+    color: #00FF9C;  /* Neon vihreä teksti */
     margin: 0;
     padding: 0;
+    background-image: url("cyber.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin-bottom:5%;
 }
 
 /* Header */
 header {
-    background-color: #4CAF50;
+    background-color: #FF00FF;  /* Neon pinkki header */
     color: white;
     text-align: center;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0.0%;
+    font-size: 2em;
+    box-shadow: 0px 0px 15px #FF00FF;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Lisää animaatio */
 }
 
 header:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 25px #FF00FF; /* Hohtaa enemmän hover-tilassa */
+    transform: translateY(-5px); /* Nousee ylös hover-tilassa */
 }
 
 /* Navigaatio */
-nav {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #202020;  /* Tummempi navigaatio */
+    margin: 0;
+    box-shadow: 0px 0px 10px #00FF9C;
+    transition: box-shadow 0.3s ease, transform 1.3s ease; /* Lisää animaatio */
+    position: fixed;  /* Tekee headerista kiinteän */
+    top: 0;  /* Kiinnittää headerin yläreunaan */
+    width: 100%;  /* Varmistaa, että header vie koko sivun leveyden */
+    z-index: 999;  /* Nostaa headerin muiden elementtien päälle */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+nav ul:hover {
+    box-shadow: 0px 0px 20px #00FF9C; /* Hohtaa enemmän hover-tilassa */
+    transform: translateY(-2px); /* Nousee hieman hover-tilassa */
 }
 
 nav ul li {
     display: inline;
+    padding: 15px 30px;
 }
 
 nav ul li a {
-    color: #4CAF50;
+    color: #00FF9C;
     text-decoration: none;
-    font-weight: 500;
-    padding: 1rem 1.5rem;
-    display: inline-block;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: white;
-    background-color: #4CAF50;
+    color: #FF00FF;
 }
 
-/* Section */
+/* Osioiden tyyli */
 section {
-    padding: 2rem;
-    margin: 2rem auto;
-    background-color: #ffffff;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1A1A1A;  /* Tummempi osioiden tausta */
+    box-shadow: 0px 0px 20px #00FF9C;
+    border-radius: 15px;
+    max-width: 1200px; /* Lisää maksimileveys */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Lisää animaatio */
 }
 
 section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 25px #FF00FF; /* Hohtaa enemmän hover-tilassa */
+    transform: translateY(-5px); /* Nousee ylös hover-tilassa */
 }
 
 h2 {
-    color: #4CAF50;
-    margin-bottom: 1rem;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #FF00FF;  /* Neon pinkki otsikko */
+    text-shadow: 0px 0px 10px #FF00FF;
 }
 
 /* Taulukko */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1rem 0;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    overflow: hidden;
+    margin: 20px 0;
+    background-color: #282828;
 }
 
 table, th, td {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #FF00FF;
+    padding: 10px;
+    text-align: left;
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #FF00FF;
     color: white;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: left;
 }
 
 td {
-    padding: 1rem;
-    text-align: left;
-    color: #333;
-}
-
-td:hover {
-    background-color: #f4f4f9;
-}
-
-/* Lomake */
-form {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-form:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-form label {
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: block;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-}
-
-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #45a049;
+    color: #00FF9C;
 }
 
 /* Footer */
 footer {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #000000;
+    color: #00FF9C;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 0px 15px #00FF9C;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Lisää animaatio */
 }
 
 footer:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 25px #00FF9C; /* Hohtaa enemmän hover-tilassa */
+    transform: translateY(-2px); /* Nousee hieman hover-tilassa */
+}
+
+/* Lomake */
+form {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #FF00FF;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Lisää animaatio */
+}
+
+form:hover {
+    box-shadow: 0px 0px 25px #FF00FF; /* Hohtaa enemmän hover-tilassa */
+    transform: translateY(-5px); /* Nousee ylös hover-tilassa */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00FF9C;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #00FF9C;
+    background-color: #1A1A1A;
+    color: #00FF9C;
+    font-size: 1em;
+    box-sizing: border-box; /* Varmistaa, että padding ei ylitä elementin leveyttä */
+}
+
+form button {
+    background-color: #FF00FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px; /* Pyöristää napin kulmat */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00FF9C;
+    color: #0D0D0D;
+}
+
+/* Kuva */
+img {
+    
+    box-shadow: 0px 0px 15px #FF00FF;
+    max-width: 100%; /* Varmistaa, että kuva ei ylitä vanhempaa elementtiä */
+    height: auto; /* Säilyttää kuvan kuvasuhteen */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Lisää animaatio */
+}
+
+img:hover {
+    box-shadow: 0px 0px 25px #FF00FF; /* Hohtaa enemmän hover-tilassa */
+    transform: translateY(-5px); /* Nousee ylös hover-tilassa */
 }
 
