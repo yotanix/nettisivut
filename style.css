@@ -4,12 +4,7 @@ body {
     color: #00FF9C;  /* Neon vihreä teksti */
     margin: 0;
     padding: 0;
-    background-image: url("cyperbunk.mp4");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    margin-bottom:5%;
-    #background-video {
+    background-video {: url("cyperbunk.mp4");
     position: fixed;
     top: 0;
     left: 0;
